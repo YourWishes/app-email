@@ -1,6 +1,6 @@
 {
   "name": "@yourwishes/app-email",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Email module for my app framework.",
   "main": "dist/index.js",
   "scripts": {
