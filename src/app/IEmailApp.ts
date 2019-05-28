@@ -25,5 +25,5 @@ import { IApp } from '@yourwishes/app-base';
 import { EmailModule } from './../module/';
 
 export interface IEmailApp extends IApp {
-  server:EmailModule;
+  email:EmailModule;
 }
