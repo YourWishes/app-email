@@ -1,0 +1,38 @@
+{
+  "name": "@yourwishes/app-email",
+  "version": "1.0.0",
+  "description": "Email module for my app framework.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc -p ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YourWishes/app-email.git"
+  },
+  "keywords": [
+    "email",
+    "app-email",
+    "framework",
+    "nodemailer",
+    "app"
+  ],
+  "author": "Dominic Masters <dominic@domsplace.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YourWishes/app-email/issues"
+  },
+  "homepage": "https://github.com/YourWishes/app-email#readme",
+  "devDependencies": {
+    "@types/jest": "^23.3.10",
+    "jest": "^23.6.0",
+    "ts-jest": "^23.10.5",
+    "typescript": "^3.2.2"
+  },
+  "dependencies": {
+    "@types/nodemailer": "^6.1.1",
+    "@yourwishes/app-base": "^2.0.10",
+    "nodemailer": "^6.2.1"
+  }
+}
