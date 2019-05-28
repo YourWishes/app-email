@@ -70,10 +70,11 @@ export class EmailModule extends Module {
     let res = await this.transporter.sendMail({
       from: this.reply, to: to.join(', '), subject, text, html: html || text
     });
-    
-    return to.reduce((x,t) => (
-      {...x, t: res.accepted.some(s => s == t) }
-    ), {});
+
+    return to.reduce((x,t) => {
+      x[t] = res.accepted.some(s => s == t);
+      return x;
+    }, {});
   }
 
   async destroy() {
