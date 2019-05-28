@@ -57,7 +57,7 @@ export class EmailModule extends Module {
     this.reply = config.get(CONFIG_REPLY);
 
     this.logger.debug('Connecting to email host...');
-    
+
     this.transporter = await nodemailer.createTransport({
       host: ip, port, secure, auth: { user: username, pass: password }
     });
@@ -65,11 +65,15 @@ export class EmailModule extends Module {
     this.logger.debug('Connected to email server!');
   }
 
-  async sendMail(to:string|string[], subject: string, text:string, html?:string):Promise<string> {
+  async sendMail(to:string|string[], subject: string, text:string, html?:string):Promise<{[key:string]:boolean}> {
     to = Array.isArray(to) ? to : [ to ];
-    return await this.transporter.sendMail({
+    let res = await this.transporter.sendMail({
       from: this.reply, to: to.join(', '), subject, text, html: html || text
     });
+    
+    return to.reduce((x,t) => (
+      {...x, t: res.accepted.some(s => s == t) }
+    ), {});
   }
 
   async destroy() {
