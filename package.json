@@ -1,6 +1,6 @@
 {
   "name": "@yourwishes/app-email",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "Email module for my app framework.",
   "main": "dist/index.js",
   "scripts": {
@@ -25,14 +25,14 @@
   },
   "homepage": "https://github.com/YourWishes/app-email#readme",
   "devDependencies": {
-    "@types/jest": "^23.3.10",
-    "jest": "^23.6.0",
-    "ts-jest": "^23.10.5",
-    "typescript": "^3.2.2"
+    "@types/jest": "^24.0.13",
+    "jest": "^24.8.0",
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.5.1"
   },
   "dependencies": {
-    "@types/nodemailer": "^6.1.1",
-    "@yourwishes/app-base": "^2.0.10",
+    "@types/nodemailer": "^6.2.0",
+    "@yourwishes/app-base": "^2.1.1",
     "nodemailer": "^6.2.1"
   }
 }
