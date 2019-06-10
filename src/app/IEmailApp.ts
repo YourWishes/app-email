@@ -22,7 +22,7 @@
 // WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 import { IApp } from '@yourwishes/app-base';
-import { EmailModule } from './../module/';
+import { EmailModule } from '~module';
 
 export interface IEmailApp extends IApp {
   email:EmailModule;

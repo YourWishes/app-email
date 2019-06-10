@@ -22,8 +22,8 @@
 // WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 import { Module, NPMPackage } from '@yourwishes/app-base';
-import { IEmailApp } from './../app/';
 import * as nodemailer from 'nodemailer';
+import { IEmailApp } from '~app';
 
 export const CONFIG_HOST = 'email.host';
 export const CONFIG_PORT = 'email.port';
