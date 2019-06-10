@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "jest",
-    "build": "tsc -p ."
+    "build": "ttsc -p ."
   },
   "repository": {
     "type": "git",
@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "@types/nodemailer": "^6.2.0",
-    "@yourwishes/app-base": "^2.1.1",
+    "@yourwishes/app-base": "^2.2.3",
     "nodemailer": "^6.2.1"
   }
 }
